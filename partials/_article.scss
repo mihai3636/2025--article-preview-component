@@ -1,0 +1,121 @@
+@use "utils" as *;
+
+.card {
+  border-radius: var(--sp-4);
+  overflow: hidden;
+
+  background-color: var(--clr-white);
+}
+
+.body-container {
+  padding-inline: var(--sp-7);
+  padding-block-start: var(--sp-7);
+  padding-block-end: var(--sp-6);
+}
+
+.title {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+
+  margin-block-end: var(--sp-5);
+}
+
+.description {
+  color: var(--clr-primary-tint-1);
+}
+
+.card-footer {
+  position: relative;
+}
+
+.footer-container {
+  padding-inline: var(--sp-7);
+  padding-block: var(--sp-5);
+
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+}
+
+.author-img {
+  width: toRem(50px);
+  height: auto;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author-name {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-bold);
+}
+
+.author-date {
+  color: var(--clr-primary-tint-1);
+}
+
+.btn-container {
+  margin-left: auto;
+}
+
+.btn {
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+
+  border: none;
+  background-color: var(--clr-primary-tint-3);
+  width: toRem(40px);
+  height: toRem(40px);
+  border-radius: 50%;
+
+  display: inline-flex; /* ensures width & height work correctly */
+  align-items: center; /* center SVG vertically */
+  justify-content: center; /* center SVG horizontally */
+}
+
+.share {
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 3s;
+  pointer-events: none;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding-inline: var(--sp-7);
+
+  background-color: var(--clr-primary);
+  color: var(--clr-primary-tint-2);
+
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+}
+
+.share.share--visible {
+  pointer-events: auto;
+  transform: translateY(0%);
+}
+
+.share-title {
+  text-transform: uppercase;
+  font-size: var(--fs-4);
+  letter-spacing: var(--sp-2);
+}
+
+.btn-share:link,
+.btn-share:visited {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-share:active,
+.btn-share:hover {
+}
