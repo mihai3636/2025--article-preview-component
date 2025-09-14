@@ -16,13 +16,5 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-// IDEE SHARE SECTION
-// share section-ul este copil al lui button container
-// pe telefon: absolut relative la .card-footer (.card-container-ul este pt padding)
-// top: 0, btm: 0, left, right: 0 ca sa-l faci sa umple parintele
-// pui pe .btn-share un z-index mai mare si il faci position: relative (Fara asta nu merge z-index)
-// transform: translateY(100%) si overflow hidden ca sa il scoti in jos si sa faci animatie frumix
-
-// apoi pe desktop, pui position: relative pe .btn-container si voila, il faci sa fie ca un pop-ul
