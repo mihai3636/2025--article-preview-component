@@ -20,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
 
     <title>Article preview component</title>
   </head>
@@ -59,8 +60,8 @@
                 <p class="author-date">28 Jun 2020</p>
               </div>
 
-              <div class="btn-container">
-                <button class="btn">
+              <div id="btnContainer" class="btn-container">
+                <button id="btnShare" class="btn">
                   <svg
                     class="btn-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +69,13 @@
                     height="13"
                   >
                     <path
-                      fill="#6E8098"
+                      fill="currentColor"
                       d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
                     />
                   </svg>
                 </button>
 
-                <div class="share">
+                <div id="share" class="share">
                   <h2 class="share-title">Share</h2>
                   <a href="#" class="btn-share"
                     ><svg

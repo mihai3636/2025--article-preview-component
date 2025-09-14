@@ -9,10 +9,11 @@
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 :root {
-  --clr-primary: hsl(217, 19%, 35%);
-  --clr-primary-tint-1: hsl(214, 17%, 51%);
-  --clr-primary-tint-2: hsl(212, 23%, 69%);
-  --clr-primary-tint-3: hsl(210, 46%, 95%);
+  --clr-primary: #48556a;
+  --clr-primary-tint-1: #6d7f97;
+  --clr-primary-tint-2: #9eafc2;
+  --clr-primary-tint-3: #ecf2f8;
+  --clr-icon: #6e8098;
   --clr-white: #fff;
   --bs-default: 0 0 10px rgba(0, 0, 0, 0.2);
   --fs-default: 0.8125rem;
@@ -208,6 +209,22 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn:hover,
+.btn:active,
+.btn.btn--active {
+  background-color: var(--clr-primary-tint-2);
+}
+
+.btn-icon {
+  color: var(--clr-icon);
+}
+
+.btn:hover .btn-icon,
+.btn:hover .btn-icon,
+.btn.btn--active .btn-icon {
+  color: var(--clr-white);
 }
 
 .share {

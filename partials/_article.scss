@@ -123,6 +123,22 @@ $bp-desktop: toRem(800px);
   justify-content: center;
 }
 
+.btn:hover,
+.btn:active,
+.btn.btn--active {
+  background-color: var(--clr-primary-tint-2);
+}
+
+.btn-icon {
+  color: var(--clr-icon);
+}
+
+.btn:hover .btn-icon,
+.btn:hover .btn-icon,
+.btn.btn--active .btn-icon {
+  color: var(--clr-white);
+}
+
 .share {
   position: absolute;
   transform: translateY(100%);
@@ -200,8 +216,4 @@ $bp-desktop: toRem(800px);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.btn-share:active,
-.btn-share:hover {
 }

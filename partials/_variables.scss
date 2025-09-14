@@ -13,10 +13,12 @@
 @use "./utils" as *;
 
 :root {
-  --clr-primary: hsl(217, 19%, 35%);
-  --clr-primary-tint-1: hsl(214, 17%, 51%);
-  --clr-primary-tint-2: hsl(212, 23%, 69%);
-  --clr-primary-tint-3: hsl(210, 46%, 95%);
+  --clr-primary: #48556a;
+  --clr-primary-tint-1: #6d7f97;
+  --clr-primary-tint-2: #9eafc2;
+  --clr-primary-tint-3: #ecf2f8;
+
+  --clr-icon: #6e8098;
 
   --clr-white: #fff;
 
